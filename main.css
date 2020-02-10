@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    background-color: #888;
+}
+
+
+/* Title */
+.title {
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+h1 {
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    color: #222;
+}
+
+
+/* Gameplay */
+.gameplay-container {
+    background-color: black;
+    height: 70vh;
+    width: 90vw;
+    margin: auto;
+    color: #fff;
+}
+.gameplay-top {
+    display: flex;
+    justify-content: center;
+}
+/* .location {} */
+.gameplay-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.main-left {
+    width: 45vw;
+}
+.main-right {
+    width: 45vw;
+    text-align: center;
+    background-color: #191919;
+}
+.game-text {
+    
+}
+
+
+.illustration {
+    height: 50vh;
+}
+.description {
+    
+}
+
+
+.gameplay-bottom {
+    margin: 2% 5%;
+    display: flex;
+}
+.actions-container {
+    margin: 3px;
+    width: 35vw;
+}
+.actions-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 30px;
+    margin: 2px
+}
+.game-menu {
+    width: 100vw;
+}
+.inventoy {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.avatar {
+    height: 55px;
+    width: 40px;
+}

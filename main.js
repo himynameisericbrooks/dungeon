@@ -45,11 +45,45 @@ var scenes = [
     mainText: 'While you were out in the field harvesting vegetables, your family disappeared and your cottage burned to the ground. You arrive at the charred rubble of your home, now surrounded by a crowd of passersby who stopped to speculate about what must have happened. An elderly neighbor tells you that they saw some shadowy figures sneak in through the back door just before the smoke started to fill the skies. Your neighbor also points you in the direction that they went. “East, toward the Wandering Hills,” he says. In a fit of rage,you take off running toward the hills. With tears streaming down your face, you sprint until the jabbing pain in your side won’t allow you to run anymore. As you start to slow down, you hear voices and laughter.',
     prompt: 'Do you charge over the next hill and fight whomever you find?',
     choice1: 'Yes',
-    choice1Result: '',
+    choice1Result: function () {
+        document.getElementById('choice2').style.display = 'none';
+        document.getElementById('choice1').style.display = 'none';
+        document.getElementById('mainText').style.textAlign = 'center';
+        updateGame(scenes[2].location, scenes[2].mainText, scenes[2].prompt, scenes[2].choice1, scenes[2].choice1Result, scenes[2].choice2, scenes[2].choice2Result, scenes[2].illustration, scenes[2].description)
+        },
     choice2: 'No',
-    choice2Result: '',
+    choice2Result: function () {
+        document.getElementById('choice2').style.display = 'none';
+        document.getElementById('choice1').style.display = 'none';
+        document.getElementById('mainText').style.textAlign = 'center';
+        updateGame(scenes[3].location, scenes[3].mainText, scenes[3].prompt, scenes[3].choice1, scenes[3].choice1Result, scenes[3].choice2, scenes[3].choice2Result, scenes[3].illustration, scenes[3].description)
+        },
     illustration: 'img/BurnedHouse.png',
     description: 'Your house is so burned.',
+    },
+
+    // scene 2
+    {
+    location: 'You Win!',
+    mainText: 'Because of your great courage, you win!',
+    choice1: '',
+    choice1Result: '',
+    choice2: '',
+    choice2Result: '',
+    illustration: 'img/Sword.png',
+    description: 'You won the this!',
+    },
+
+    // scene 3
+    {
+    location: 'You die!',
+    mainText: 'Because of your great courage, you have died.',
+    choice1: '',
+    choice1Result: '',
+    choice2: '',
+    choice2Result: '',
+    illustration: 'img/Sword.png',
+    description: 'You lost. Be sad.',
     }
 ]
 

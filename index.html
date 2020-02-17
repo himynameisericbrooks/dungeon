@@ -12,10 +12,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
     </head>
-    <body>
+    <body id='body'>
         <!-- Title Section  -->
-        <div class="title">
-            <h1>Try to Avenge Your Family</h1>
+        <div class="title-container">
+            <h1 class='title' id="title">Try to Avenge Your Family</h1>
         </div>
 
 
@@ -29,7 +29,7 @@
             <div class="gameplay-top">
 
                 <!-- heading to describe location -->
-                <h2 class="location" id="location">Location</h2>
+                <h2 class="location" id="location"></h2>
             </div>
             
 
@@ -41,7 +41,14 @@
                 <!-- the left-middle of the gameplay container -->
                 <div class="main-left">
                     <!-- The main text of the game -->
-                    <p class="game-text" id="game-text">This is the game-text area</p>
+                    <p class="mainText" id="mainText"></p>
+                    <p class="prompt" id="prompt"></p>
+                    <input type="text" placeholder="Enter Your Name" id="username" class="userInput">
+                    <br>
+                    <div class="btnWrap">
+                        <button id="choice1" class="choice1"></button>
+                        <button id="choice2" class="choice2"></button>
+                    </div>
                 </div>
 
                 <!-- the right-middle of the gameplay container -->
@@ -49,37 +56,38 @@
                     <!-- Section containing an image and descritption related to what is happening in the game  -->
                     <div class="image-block">
                         <!-- Current game image -->
-                        <img class="illustration" src="img/TTYAFman.png">
+                        <img class="illustration" id="illustration" src="">
                         <!-- Current game description -->
-                        <p class="description">This is the image description</p>
+                        <p class="description" id="description"></p>
                     </div>
-                </div>
-                
+                </div>    
             </div>
 
 
-
             <!-- the bottom section of the gameplay container -->
-            <div class="gameplay-bottom">
+            <div class="gameplay-bottom" id="gameplay-bottom">
 
-                <!-- Menu -->
+                <!-- Menu
                 <div class="actions-container">
                     <h3 class="actions">Actions</h3>
-                        <ul class="actions-list">
-                            <li>Rest</li>
-                            <li>Sleep</li>
-                            <li>Eat</li>
-                        </ul>
-                </div>
+                    <ul class="actions-list">
+                        <li>Rest</li>
+                        <li>Sleep</li>
+                        <li>Eat</li>
+                    </ul>
+                </div> -->
 
 
-
-
-
-                <!-- Inventory -->
+                <!-- Inventory / pleyer stats-->
                 <div class="inventory">
-                    <img class="avatar" src="img/TTYAFMAN.png">
-                    <h4 class='equipped'>Equipped</h4>
+                    <h2 id='nameDisplay' class="nameDisplay"></h2>
+                    <img class="avatar" src="img/TTYAFUniShirtpants.png">
+                    <!-- <h4 class='equipped'>Equipped</h4>
+                </div>
+                <div class="stats">
+                    <p class="health">Health</p>
+                    <p class="strength">Strength</p>
+                    <p class="money">Money</p> -->
                 </div>
 
 
@@ -87,15 +95,43 @@
         </div>
 
 
-
-
-
-
-
-
-
-
-
         <script src="main.js" async defer></script>
     </body>
 </html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>DevStar Quest</title>
+        <link rel="icon" href="img/sword.png" type="image/gif">
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+    <body>
+        <audio id="myAudio">
+            <source src="music/tavernMusic.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="container">
+            <h1 id="sceneTitle"></h1>
+            <p id="sceneContent"></p>
+            <input id="charNameInput" placeholder="Enter Your Characters Name" />
+        </div>
+        <div id="charInfo">
+            <p>Name: <span id="charName"></span></p>
+            <p>Health: <span id="charHealth"></span></p>
+            <p>Damage: <span id="charDamage"></span></p>
+            <p>Armor: <span id="charArmor"></span></p>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
+->>

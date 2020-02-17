@@ -1,6 +1,10 @@
 body {
     margin: 0;
-    background-color: #888;
+    background-image: url('../javascript-dungeon-crawler/img/vegetable-field.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 
@@ -22,15 +26,16 @@ h1 {
 
 /* Gameplay */
 .gameplay-container {
-    background-color: black;
-    height: 70vh;
-    width: 90vw;
-    margin: auto;
+    background-color: rgba(2, 2, 2, .7);
+    height: 80vh;
     color: #fff;
+    text-align: center;
+    margin: 0 20px;
 }
 .gameplay-top {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 /* .location {} */
 .gameplay-main {
@@ -41,15 +46,29 @@ h1 {
     align-items: center;
 }
 .main-left {
-    width: 45vw;
+    width: 50%;
 }
 .main-right {
-    width: 45vw;
     text-align: center;
-    background-color: #191919;
+    width: 50%;
 }
-.game-text {
-    
+.mainText {
+    padding: 10px;
+    font-size: 19px;
+}
+.prompt {
+    font-size: 21px;
+    padding: 5px;
+}
+.choice1, .choice2 {
+    color: #eee;
+    background-color: #e00;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+}
+.choice2 {
+    display: none;
 }
 
 
@@ -62,29 +81,35 @@ h1 {
 
 
 .gameplay-bottom {
-    margin: 2% 5%;
     display: flex;
+    justify-content: space-between;
+    background-color: rgba(1, 1, 1, .9);
+    padding: 15px;
+    display: none;
+    width: 100vw;
 }
 .actions-container {
-    margin: 3px;
-    width: 35vw;
+
 }
 .actions-list {
-    display: flex;
     list-style: none;
+    font-size: 20px;
+    display: flex;
     justify-content: space-between;
-    font-size: 30px;
-    margin: 2px
+    width: 500px;
+    align-items: center;
 }
 .game-menu {
-    width: 100vw;
+    
 }
 .inventoy {
     width: 35vw;
-    display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
     align-items: center;
 }
 .avatar {

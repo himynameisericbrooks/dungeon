@@ -22,7 +22,7 @@ var scenes = [
         document.getElementById('username').style.display = 'none';
         document.getElementById('mainText').style.textAlign = 'left';
         document.getElementById('gameplay-bottom').style.display = 'inline-block';
-        document.getElementById('body').style.backgroundImage = "url('../javascript-dungeon-crawler/img/smoke.jpg')";
+        document.getElementById('body').style.backgroundImage = "url('img/smoke.jpg')";
         document.getElementById('nameDisplay').textContent =username
         if(username.length > 0) {        
         updateGame(scenes[1].location, scenes[1].mainText, scenes[1].prompt, scenes[1].choice1, scenes[1].choice1Result, scenes[1].choice2, scenes[1].choice2Result, scenes[1].illustration, scenes[1].description)

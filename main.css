@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url('../javascript-dungeon-crawler/img/vegetable-field.jpg');
+    background-image: url('img/vegetable-field.jpg');
     background-repeat: no-repeat;
     background-size: 100vw;
     background-attachment: fixed;

@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-image: url('img/vegetable-field.jpg');
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
@@ -115,4 +115,34 @@ h1 {
 .avatar {
     height: 55px;
     width: 40px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 1050px) {
+    .gameplay-container {
+        width: 100vw;
+    }
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 500px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 630px) {
+    h1 {
+        font-size: 28px;
+    }
+    .gameplay-main {
+        flex-direction: column;
+    }
+    .gameplay-container {
+        height: 120vh;
+    }
 }
